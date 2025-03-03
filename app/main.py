@@ -29,6 +29,11 @@ async def get_exchange_rate(currency:str,api_key: str = Depends(get_api_key))->f
         raise HTTPException(status_code=500,detail="Error fetching exchange rate")
 
 
+@app.get("/")
+def get():
+    print("welcome to CICD")
+
+
 @app.get("/wallet")
 async def get_wallet(api_key: str = Depends(get_api_key)):
     total_pln=0

@@ -31,7 +31,7 @@ async def get_exchange_rate(currency:str,api_key: str = Depends(get_api_key))->f
 
 @app.get("/")
 def get():
-    print("welcome to CICD")
+    print("welcome to CICD pipeline")
 
 
 @app.get("/wallet")
